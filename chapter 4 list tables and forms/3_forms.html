@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #eef2ff, #f9fafb);
+    color: #1f2937;
+}
+
+form {
+    width: 100%;
+    max-width: 520px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+form > div {
+    margin-bottom: 14px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+input,
+select,
+textarea {
+    border: 1px solid #d1d5db;
+    background: #f9fafb;
+    color: #111827;
+    padding: 10px 12px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #6366f1;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: #1f2937;
+}
+
+/* Subscription row */
+input[type="radio"] {
+    width: auto;
+    margin: 0 12px 0 6px;
+    transform: translateY(1px);
+}
+
+button[type="submit"] {
+    border: none;
+    padding: 11px 16px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.25);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    label,
+    input,
+    select,
+    textarea,
+    button {
+        font-size: 13px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <form action="/submit.vscode">
+        <!-- text input for name  -->
+        <div>
+            <label for="name">Name</label>
+            <input id="Name" type="text" placeholder="enter name" required>
+        </div>
+        <!-- input for phone  -->
+        <div>
+            <label for="Ph">Phone</label>
+            <input id="Ph" type="tel" placeholder="enter phone" required>
+        </div>
+        <!-- input for email   -->
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="Email" placeholder="enter Email" required>
+        </div>
+        <!-- input for date of birth  -->
+        <div>
+            <label for="dob">Date Of Birth</label>
+            <input id="dob" type="date" placeholder="enter dob" required>
+        </div>
+        <!-- input for gender  -->
+        <div>
+            <label for="gender">gender</label>
+            <select id="gender" required>
+                <option value="disabled selected">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <!-- input for password  -->
+        <div>
+            <label for="password">Password</label>
+            <input type="password" placeholder="enter password" required>
+        </div>
+        <!-- radio buttons for subscription  -->
+        <div>
+            <h3>Subscription Plan</h3>
+            <label for="basic">Basic</label>
+            <input id="basic" type="radio" name="subscription">
+            <label for="vip">VIP</label>
+            <input id="vip" type="radio" name="subscription">
+            <label for="premium">Premium</label>
+            <input id="premium" type="radio" name="subscription">
+        </div>
+        <!-- textarea for buttons  -->
+         <label for="comments">Comments</label>
+         <textarea id="comments" placeholder="Enter your Comments" rows="6"></textarea>
+<!-- submit button  -->
+ <div>
+    <button type="submit">Submit</button>
+ </div>
+        </form>
+</body>
+
+</html>

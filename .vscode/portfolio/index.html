@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Responsive portfolio website" />
+  <title>Portfolio | Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-elevate="false">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark" aria-hidden="true">YN</span>
+        <span class="brand-text">Your Name</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="icon-btn nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+          aria-controls="nav-menu">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu" data-open="false">
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#contact">Contact</a>
+
+          <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+            <span class="theme-icon" aria-hidden="true"></span>
+            <span class="theme-label">Theme</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Front-end Developer</p>
+          <h1 class="hero-title">
+            I build clean, fast, and responsive web experiences.
+          </h1>
+          <p class="hero-subtitle">
+            Portfolio starter built with HTML, CSS, and JavaScript. Fully responsive,
+            accessible, and easy to customize.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn secondary" href="#contact">Contact Me</a>
+          </div>
+
+          <ul class="hero-stats" aria-label="Quick highlights">
+            <li class="stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Mini projects</span>
+            </li>
+            <li class="stat">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Internships</span>
+            </li>
+            <li class="stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Responsive</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-card" role="img" aria-label="Profile card">
+          <div class="avatar" aria-hidden="true">
+            <span>YN</span>
+          </div>
+          <div class="hero-card-body">
+            <p class="card-title">Available for freelance</p>
+            <p class="card-subtitle">Websites • Landing pages • UI polish</p>
+            <div class="card-actions">
+              <a class="btn small" href="#contact">Hire me</a>
+              <a class="btn small ghost" href="#about">More</a>
+            </div>
+            <p class="card-note">
+              Tip: edit <code>index.html</code> to add your real info.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            Replace these with your own work. Each card scales nicely on mobile.
+          </p>
+        </div>
+
+        <div class="grid cards">
+          <article class="card">
+            <div class="card-top">
+              <h3 class="card-h">Landing Page</h3>
+              <p class="card-p">
+                Responsive marketing page with a clean hero and sections.
+              </p>
+            </div>
+            <ul class="tags" aria-label="Technologies used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+            </ul>
+            <div class="card-links">
+              <a class="link" href="#" aria-label="Open demo for Landing Page">Demo</a>
+              <a class="link" href="#" aria-label="Open code for Landing Page">Code</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3 class="card-h">To-do App</h3>
+              <p class="card-p">
+                CRUD to-do list with localStorage persistence and filters.
+              </p>
+            </div>
+            <ul class="tags" aria-label="Technologies used">
+              <li>JS</li>
+              <li>LocalStorage</li>
+              <li>UX</li>
+            </ul>
+            <div class="card-links">
+              <a class="link" href="#" aria-label="Open demo for To-do App">Demo</a>
+              <a class="link" href="#" aria-label="Open code for To-do App">Code</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3 class="card-h">Weather UI</h3>
+              <p class="card-p">
+                Search weather UI with loading states and friendly errors.
+              </p>
+            </div>
+            <ul class="tags" aria-label="Technologies used">
+              <li>API</li>
+              <li>Async</li>
+              <li>CSS</li>
+            </ul>
+            <div class="card-links">
+              <a class="link" href="#" aria-label="Open demo for Weather UI">Demo</a>
+              <a class="link" href="#" aria-label="Open code for Weather UI">Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-subtitle">A simple, responsive list.</p>
+        </div>
+
+        <div class="grid pills" role="list">
+          <div class="pill" role="listitem">HTML5</div>
+          <div class="pill" role="listitem">CSS3</div>
+          <div class="pill" role="listitem">JavaScript</div>
+          <div class="pill" role="listitem">Responsive Design</div>
+          <div class="pill" role="listitem">Accessibility</div>
+          <div class="pill" role="listitem">Git & GitHub</div>
+          <div class="pill" role="listitem">Node.js (Basics)</div>
+          <div class="pill" role="listitem">REST APIs</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about">
+          <div>
+            <h2 class="section-title">About</h2>
+            <p class="lead">
+              I’m a developer who loves building simple UIs with great UX.
+            </p>
+            <p class="muted">
+              Customize this section with your education, achievements, and what you’re
+              learning right now.
+            </p>
+            <div class="about-actions">
+              <a class="btn secondary" href="#" download>Download CV</a>
+              <a class="btn ghost" href="#contact">Let’s talk</a>
+            </div>
+          </div>
+
+          <div class="about-box">
+            <h3 class="about-h">Quick Info</h3>
+            <dl class="about-dl">
+              <div>
+                <dt>Location</dt>
+                <dd>Your City</dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a class="link" href="mailto:you@example.com">you@example.com</a></dd>
+              </div>
+              <div>
+                <dt>GitHub</dt>
+                <dd><a class="link" href="#" rel="noreferrer">github.com/you</a></dd>
+              </div>
+              <div>
+                <dt>LinkedIn</dt>
+                <dd><a class="link" href="#" rel="noreferrer">linkedin.com/in/you</a></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">
+            This form is front-end only (no backend). It validates and opens your email app.
+          </p>
+        </div>
+
+        <form class="form" data-contact-form>
+          <div class="grid form-grid">
+            <label class="field">
+              <span class="label">Name</span>
+              <input name="name" type="text" autocomplete="name" required minlength="2" />
+            </label>
+            <label class="field">
+              <span class="label">Email</span>
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+          </div>
+          <label class="field">
+            <span class="label">Message</span>
+            <textarea name="message" rows="5" required minlength="10"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send</button>
+            <p class="form-hint" role="status" aria-live="polite" data-form-status></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span data-year></span> Your Name. All rights reserved.</p>
+      <div class="footer-links">
+        <a class="link" href="#top">Back to top</a>
+        <a class="link" href="#projects">Projects</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js" defer></script>
+</body>
+
+</html>

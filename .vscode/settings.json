@@ -1,0 +1,6 @@
+{
+    "livePreview.defaultPreviewPath": "/portfolio/index.html",
+    "editor.minimap.side": "right",
+    "editor.suggest.preview": true,
+    "workbench.colorTheme": "Cursor Light"
+}

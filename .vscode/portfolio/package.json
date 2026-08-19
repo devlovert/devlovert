@@ -1,0 +1,10 @@
+{
+  "name": "portfolio-starter",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Responsive portfolio website (HTML, CSS, JS) with a Node.js dev server",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
+
